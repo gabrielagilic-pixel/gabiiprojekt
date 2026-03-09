@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtIme = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtVrsta = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPasmina = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,7 +44,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtNapomena = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -60,12 +60,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ime:";
             // 
-            // textBox1
+            // txtIme
             // 
-            this.textBox1.Location = new System.Drawing.Point(39, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtIme.Location = new System.Drawing.Point(39, 20);
+            this.txtIme.Name = "txtIme";
+            this.txtIme.Size = new System.Drawing.Size(100, 20);
+            this.txtIme.TabIndex = 1;
             // 
             // label2
             // 
@@ -76,12 +76,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Vrsta:";
             // 
-            // textBox2
+            // txtVrsta
             // 
-            this.textBox2.Location = new System.Drawing.Point(46, 55);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtVrsta.Location = new System.Drawing.Point(46, 55);
+            this.txtVrsta.Name = "txtVrsta";
+            this.txtVrsta.Size = new System.Drawing.Size(100, 20);
+            this.txtVrsta.TabIndex = 3;
             // 
             // label3
             // 
@@ -92,12 +92,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Pasmina:";
             // 
-            // textBox3
+            // txtPasmina
             // 
-            this.textBox3.Location = new System.Drawing.Point(62, 96);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 5;
+            this.txtPasmina.Location = new System.Drawing.Point(62, 96);
+            this.txtPasmina.Name = "txtPasmina";
+            this.txtPasmina.Size = new System.Drawing.Size(100, 20);
+            this.txtPasmina.TabIndex = 5;
             // 
             // radioButton1
             // 
@@ -191,12 +191,12 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Napomena:";
             // 
-            // textBox4
+            // txtNapomena
             // 
-            this.textBox4.Location = new System.Drawing.Point(70, 281);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 16;
+            this.txtNapomena.Location = new System.Drawing.Point(70, 281);
+            this.txtNapomena.Name = "txtNapomena";
+            this.txtNapomena.Size = new System.Drawing.Size(100, 20);
+            this.txtNapomena.TabIndex = 16;
             // 
             // button1
             // 
@@ -206,20 +206,21 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "Spremi";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txtIme);
+            this.groupBox1.Controls.Add(this.txtNapomena);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtVrsta);
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtPasmina);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label6);
@@ -227,9 +228,9 @@
             this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Location = new System.Drawing.Point(29, 39);
+            this.groupBox1.Location = new System.Drawing.Point(29, 34);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(240, 372);
+            this.groupBox1.Size = new System.Drawing.Size(240, 373);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Azil";
@@ -253,11 +254,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtIme;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtVrsta;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPasmina;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Label label4;
@@ -268,7 +269,7 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtNapomena;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
     }

@@ -46,17 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormFiltriranje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFiltriranje.Designer.cs">
+      <DependentUpon>FormFiltriranje.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPregled.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPregled.Designer.cs">
       <DependentUpon>FormPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatistika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatistika.Designer.cs">
+      <DependentUpon>FormStatistika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUdomljavanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUdomljavanje.Designer.cs">
+      <DependentUpon>FormUdomljavanje.cs</DependentUpon>
     </Compile>
     <Compile Include="FormUnos.cs">
       <SubType>Form</SubType>
@@ -68,6 +87,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPregled.resx">
+      <DependentUpon>FormPregled.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUnos.resx">
       <DependentUpon>FormUnos.cs</DependentUpon>

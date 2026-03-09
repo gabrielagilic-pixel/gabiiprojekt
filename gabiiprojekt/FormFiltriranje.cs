@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace gabiiprojekt
 {
-    public partial class FormPregled : Form
+    public partial class FormFiltriranje : Form
     {
-        public FormPregled()
+        public FormFiltriranje()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            listBox1.DataSource=Admin.GetAllAsStrings();
         }
     }
 }
