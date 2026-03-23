@@ -157,7 +157,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(9, 215);
+            this.dateTimePicker1.Location = new System.Drawing.Point(6, 215);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 12;
@@ -244,6 +244,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FormUnos";
             this.Text = "FormUnos";
+            this.Load += new System.EventHandler(this.FormUnos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

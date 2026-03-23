@@ -88,8 +88,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormFiltriranje.resx">
+      <DependentUpon>FormFiltriranje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPregled.resx">
       <DependentUpon>FormPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatistika.resx">
+      <DependentUpon>FormStatistika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUdomljavanje.resx">
+      <DependentUpon>FormUdomljavanje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUnos.resx">
       <DependentUpon>FormUnos.cs</DependentUpon>

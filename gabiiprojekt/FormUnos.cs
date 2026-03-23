@@ -36,6 +36,23 @@ namespace gabiiprojekt
                 checkBox2.Checked + "," +
                 txtNapomena.Text;
             Admin.Spremi(zapis);
+
+            MessageBox.Show("Podatci su uspješno spremljeni!");
+
+            txtIme.Clear();
+            txtVrsta.Clear();
+            txtPasmina.Clear();
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            numericUpDown1.Value = 0;
+            checkBox1.Checked = true;
+            checkBox2.Checked = false;
+            txtNapomena.Clear();
+        }
+
+        private void FormUnos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
